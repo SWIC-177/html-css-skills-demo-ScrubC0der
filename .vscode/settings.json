@@ -1,10 +1,12 @@
 {
-    "editor.codeActionsOnSave": {
-        "source.fixAll": true
-    },
-    "editor.bracketPairColorization.enabled": true,
-    "editor.formatOnSave": true,
-    "editor.wordWrap": "wordWrapColumn",
-    "files.autoSave": "onFocusChange",
-    "files.eol": "\n",
+  "css.validate": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "wordWrapColumn",
+  "files.autoSave": "onFocusChange",
+  "files.eol": "\n"
 }
