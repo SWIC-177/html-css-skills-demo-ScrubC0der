@@ -30,13 +30,18 @@ p {
 }
 
 footer {
-  background-color: darkgray;
+  background-color: transparent;
   width: 100%;
   min-height: 100px;
 }
 
 div {
   margin-right: 100px;
+}
+
+.question {
+  margin-left: 80%;
+  margin-top: 5%;
 }
 
 section {
@@ -47,17 +52,32 @@ section {
 }
 
 ul {
-  background-color: darkgray;
-  width: 100%;
-  min-height: 100px;
+  background-color: transparent;
+  margin-left: 30%;
+  margin-top: 5%;
 }
 
 .email {
   align-self: center;
   margin-right: auto;
+  cursor: pointer;
 }
 
 button {
-  background-color: gold;
-  margin: auto;
+  background: transparent;
+  background-color: transparent;
+  margin-left: 30%;
+  cursor: pointer;
+  border: 1px solid dark;
+}
+
+.radio-label {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 3%;
+}
+
+.radio-input {
+  display: inline-block;
+  vertical-align: top;
 }
