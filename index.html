@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,46 +7,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About me</title>
   </head>
-  <main>
-    <body>
-      <header>
-        <h1 class="text-red-500 text-xl">Kelan Branch</h1>
-        <h2>My First Website</h2>
-      </header>
-      <nav>
-        <div class="text-blue-600">
-          I have been practicing HTML for almost a year and studied CSS.
-          <br />This is my second semester in SWIC for my Computer Science
-          degree in web development. <br />
-          My plan for this year is to know all of the html tags and how to
-          position tables using CSS.
-        </div>
-        <div>
-          <img src="https://cdn3.emoji.gg/emojis/Coin.gif" id="coins" />
-        </div>
-        <div>
-          <p>Did you find this page helpful?</p>
-        </div>
+  <main class="p-0">
+    <header>
+      <h1 class="text-center text-3xl font-semibold text-white underline">
+        Kelan Branch
+      </h1>
+      <h2 class="p-3 text-center text-white">My First Website</h2>
+    </header>
+    <body class="bg-cyan-950 px-4 py-6">
+      <form>
+        <div class="grid-rows grid grid-flow-col gap-6 border bg-slate-500">
+          <div class="text-s p-9 text-center font-mono text-yellow-300">
+            I have been practicing HTML for almost a year and studied CSS.
+            <br />This is my second semester in SWIC for my Computer Science
+            degree in web development. <br />
+            My plan for this year is to know all of the html tags and how to
+            position tables using CSS.
+          </div>
 
-        <div>
-          <input type="radio" name="drone" id="yes" value="yes" checked />
-          <label for="yes">Yes</label>
+          <div class="scale-50">
+            <img src="https://cdn3.emoji.gg/emojis/Coin.gif" id="coins" />
+          </div>
         </div>
-        <div>
-          <input type="radio" name="drone" id="no" value="no" checked />
-          <label for="no">No</label>
+        <div class="p-8"></div>
+        <div class="grid grid-flow-col border bg-slate-500">
+          <div class="p-8 text-center text-2xl text-white">
+            Did you find this page helpful?
+            <div class="p-5">
+              <input type="radio" name="drone" id="yes" value="yes" checked />
+              <label for="yes">Yes</label>
+              <input type="radio" name="drone" id="no" value="no" checked />
+              <label for="no">No</label>
+            </div>
+          </div>
         </div>
+        <div class="p-5"></div>
+        <div class="grid grid-flow-col border bg-slate-500 p-4">
+          Subscribe to our daily newsletter?
 
-        Subscribe to our daily newsletter?
-        <div>
           <input type="checkbox" name="Subscribe" id="Subscribe" /><label
             for="Subscribe"
             >Subscribe to newsletter</label
           >
         </div>
-      </nav>
+      </form>
     </body>
-    <footer>
+    <div class="p-5"></div>
+    <footer class="grid grid-flow-row-dense justify-items-center p-3">
       <section>Contact me</section>
 
       <ul>
