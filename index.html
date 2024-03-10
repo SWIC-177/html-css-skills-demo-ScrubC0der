@@ -16,8 +16,10 @@
     </header>
     <body class="bg-cyan-950 px-4 py-6">
       <form>
-        <div class="grid-rows grid grid-flow-col gap-6 border bg-slate-500">
-          <div class="text-s p-9 text-center font-mono text-yellow-300">
+        <div
+          class="grid-rows grid grid-flow-col gap-6 rounded-lg border bg-slate-500"
+        >
+          <div class="text-s p-9 text-center text-yellow-300">
             I have been practicing HTML for almost a year and studied CSS.
             <br />This is my second semester in SWIC for my Computer Science
             degree in web development. <br />
@@ -30,7 +32,7 @@
           </div>
         </div>
         <div class="p-8"></div>
-        <div class="grid grid-flow-col border bg-slate-500">
+        <div class="grid grid-flow-col rounded-lg border bg-slate-500">
           <div class="p-8 text-center text-2xl text-white">
             Did you find this page helpful?
             <div class="p-5">
@@ -42,38 +44,56 @@
           </div>
         </div>
         <div class="p-5"></div>
-        <div class="grid grid-flow-col border bg-slate-500 p-4">
+        <div
+          class="grid grid-flow-col rounded-lg border bg-slate-500 p-4 text-white"
+        >
           Subscribe to our daily newsletter?
 
-          <input type="checkbox" name="Subscribe" id="Subscribe" /><label
-            for="Subscribe"
-            >Subscribe to newsletter</label
-          >
+          <input
+            type="checkbox"
+            class="text-white"
+            name="Subscribe"
+            id="Subscribe"
+          /><label for="Subscribe">Subscribe to newsletter</label>
         </div>
       </form>
     </body>
     <div class="p-5"></div>
     <footer class="grid grid-flow-row-dense justify-items-center p-3">
-      <section>Contact me</section>
-
-      <ul>
-        <label for="email">Enter your email</label>
-        <input
-          type="email"
-          id="email"
-          pattern=".+@example\.com"
-          size="30 required"
-        />
-      </ul>
-      <ul>
-        <label for="textbox">Enter your messsage</label>
-        <textarea> </textarea>
-      </ul>
-      <ul>
-        <div>
-          <button type="button">submit</button>
+      <form
+        class="flex flex-col items-center rounded-lg border bg-slate-500 px-10 py-10 text-white"
+      >
+        <section class="text-center">Contact me</section>
+        <div class="mx-0 min-w-full flex-col items-center px-10 py-10">
+          <div>
+            <label for="email" class="">Enter your email</label>
+            <input
+              type="email"
+              class="text-gray-700 dark:border-gray-600 dark:bg-gray-700"
+              id="email"
+              pattern=".+@example\.com"
+              size="30 required"
+            />
+          </div>
+          <div class="p-3"></div>
+          <div>
+            <label for="textbox">Enter your messsage</label>
+            <textarea
+              id="message"
+              rows="4"
+              class="block w-full rounded-lg border p-2.5 text-sm dark:border-gray-600 dark:bg-gray-700"
+              placeholder="Write your thoughts here..."
+            ></textarea>
+            <div class="p-2"></div>
+            <button
+              type="button"
+              class="container mx-0 flex min-w-full flex-col items-center rounded-xl bg-yellow-400 px-1 py-1 text-black hover:bg-yellow-200"
+            >
+              submit
+            </button>
+          </div>
         </div>
-      </ul>
+      </form>
     </footer>
   </main>
 </html>
