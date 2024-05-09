@@ -67,13 +67,32 @@
         <section class="text-center">Contact me</section>
         <div class="mx-0 min-w-full flex-col items-center px-10 py-10">
           <div>
-            <label for="email" class="">Enter your email</label>
+            <label for="name">Enter your name</label>
+            <input
+              type="text"
+              class="text-white dark:border-gray-600 dark:bg-gray-700"
+              id="name"
+              placeholder="Name here"
+            />
+          </div>
+          <div class="p-3"></div>
+          <div>
+            <label for="phone">Enter your phone number</label>
+            <input
+              type="tel"
+              class="text-white dark:border-gray-600 dark:bg-gray-700"
+              id="phone"
+              placeholder="Phone number"
+            />
+          </div>
+          <div class="p-3"></div>
+          <div>
+            <label for="email">Enter your email</label>
             <input
               type="email"
               class="text-white dark:border-gray-600 dark:bg-gray-700"
               id="email"
-              pattern=".+@example\.com"
-              size="30 required"
+              placeholder="Enter your email"
             />
           </div>
           <div class="p-3"></div>
