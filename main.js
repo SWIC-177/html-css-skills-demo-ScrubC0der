@@ -19,4 +19,3 @@ formEls.forEach((el) => {
     }
   });
 });
-console.log(formEls);
