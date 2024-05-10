@@ -1,4 +1,4 @@
-import { ERRORS } from "./src/lib";
+import { ERRORS, renderError, hideError } from "./src/lib";
 
 console.log(ERRORS);
 
@@ -11,8 +11,12 @@ const submitBtn = document.querySelector("button[type='submit']");
 
 formEls.forEach((el) => {
   el.addEventListener("blur", (e) => {
-    console.log(
-      ERRORS.find((error) => error.id === e.target.id).validate(e.target.value),
-    );
+    const elError = ERRORS.find((error) => error.id === e.target.id);
+    if (!elError.validate(e.target.value)) {
+      renderError(e.target, elError.msg);
+    } else {
+      hideError(e.target);
+    }
   });
 });
+console.log(formEls);
