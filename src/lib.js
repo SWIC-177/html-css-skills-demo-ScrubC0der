@@ -1,3 +1,5 @@
+import validator from "validator";
+
 export const ERRORS = [
   {
     id: "name",
@@ -10,16 +12,14 @@ export const ERRORS = [
     id: "email",
     msg: "please enter a valid email.",
     validate(val) {
-      let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      return emailRegex.test(val);
+      return validator.isEmail(val);
     },
   },
   {
     id: "phone",
     msg: "please enter a valid phone number.",
     validate(val) {
-      let phoneRegex = /^\d{10}$/;
-      return phoneRegex.test(val);
+      return validator.isMobilePhone(val, "en-US");
     },
   },
   {
