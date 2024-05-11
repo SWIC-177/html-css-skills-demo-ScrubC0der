@@ -3,7 +3,7 @@
 @tailwind utilities;
 @layer components {
   .error {
-    @apply mt-2 scale-y-0 font-semibold text-red-500;
+    @apply mt-2 scale-y-0 font-semibold text-yellow-500;
   }
 }
 
